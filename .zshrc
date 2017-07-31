@@ -7,9 +7,6 @@ else
   source ~/.zplug/init.zsh
 fi
 
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/npm", from:oh-my-zsh
-zplug "plugins/debian", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
