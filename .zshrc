@@ -1,3 +1,5 @@
+export SHELL=/usr/bin/zsh
+
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
   git clone https://github.com/zplug/zplug ~/.zplug
