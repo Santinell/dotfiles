@@ -1,8 +1,3 @@
-setopt PROMPT_CR
-setopt PROMPT_SP
-export PROMPT_EOL_MARK=""
-export SHELL=/usr/bin/zsh
-
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
   git clone https://github.com/zplug/zplug ~/.zplug

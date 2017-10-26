@@ -1,3 +1,5 @@
+export PROMPT_EOL_MARK=""
+export SHELL=/usr/bin/zsh
 export EDITOR=/bin/nano
 export VISUAL=/bin/nano
 
@@ -18,6 +20,8 @@ alias 'today=calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias 'dirsize=du -sckxh *'
 alias 'back=cd $OLDPWD'
 
+setopt PROMPT_CR
+setopt PROMPT_SP
 setopt extendedglob
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
