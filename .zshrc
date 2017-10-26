@@ -16,7 +16,7 @@ zplug "plugins/sudo", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting"
 
 # Load theme file
 zplug 'themes/agnoster', from:oh-my-zsh, as:theme
