@@ -1,3 +1,11 @@
+export PROMPT_EOL_MARK=""
+export SHELL=/usr/bin/zsh
+export EDITOR=/bin/nano
+export VISUAL=/bin/nano
+export TERM="xterm-256color"
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time node_version)
+
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
   git clone https://github.com/zplug/zplug ~/.zplug
@@ -14,7 +22,8 @@ zplug "lib/history", from:oh-my-zsh
 zplug "zdharma/fast-syntax-highlighting"
 
 # Load theme file
-zplug 'themes/agnoster', from:oh-my-zsh, as:theme
+#zplug 'themes/agnoster', from:oh-my-zsh, as:theme
+zplug 'bhilburn/powerlevel9k', as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then zplug install; fi

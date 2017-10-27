@@ -1,8 +1,3 @@
-export PROMPT_EOL_MARK=""
-export SHELL=/usr/bin/zsh
-export EDITOR=/bin/nano
-export VISUAL=/bin/nano
-
 h() {
   if [ $# -eq 0 ]; then
     fc -l
