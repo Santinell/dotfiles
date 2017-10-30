@@ -3,8 +3,8 @@ export SHELL=/usr/bin/zsh
 export EDITOR=/bin/nano
 export VISUAL=/bin/nano
 export TERM="xterm-256color"
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time node_version)
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
