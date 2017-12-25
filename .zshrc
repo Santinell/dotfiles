@@ -1,5 +1,4 @@
 export PROMPT_EOL_MARK=""
-export SHELL=/usr/bin/zsh
 export EDITOR=/bin/nano
 export VISUAL=/bin/nano
 export TERM="xterm-256color"
