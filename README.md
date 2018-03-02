@@ -6,7 +6,8 @@
 
 ```shell
 sudo apt update
-sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip
+sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip python-pip
+sudo pip install Pygments
 ```
 
 ### Arch linux
