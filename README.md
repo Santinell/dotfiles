@@ -6,14 +6,14 @@
 
 ```shell
 sudo apt update
-sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip python-pygments
+sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip
 ```
 
 ###Arch linux
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip python-pygments
+sudo pacman -S gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pygmentize
 ```
 
 ## Powerline fonts
