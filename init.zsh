@@ -10,10 +10,11 @@ h() {
 alias grep='grep --color=auto'
 alias psg='ps aux | grep'
 alias hisg='h 10000 | grep'
-alias sendtext="curl -F 'sprunge=<-' http://sprunge.us"
-alias 'today=calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
-alias 'dirsize=du -scxkh .* *'
-alias 'back=cd $OLDPWD'
+alias sendtext='curl -F "sprunge=<-" http://sprunge.us'
+alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
+alias dirsize='du -scxkh .* *'
+alias back='cd $OLDPWD'
+alias ls='ls --color'
 
 setopt PROMPT_CR
 setopt PROMPT_SP
