@@ -2,14 +2,14 @@
 
 ## Dependencies
 
-###Debian/Ubuntu
+### Debian/Ubuntu
 
 ```shell
 sudo apt update
 sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip
 ```
 
-###Arch linux
+### Arch linux
 
 ```shell
 sudo pacman -Syu
