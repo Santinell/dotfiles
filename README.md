@@ -1,9 +1,19 @@
 # Install
 
 ## Dependencies
+
+###Debian/Ubuntu
+
 ```shell
 sudo apt update
-sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip
+sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gzip python-pygments
+```
+
+###Arch linux
+
+```shell
+sudo pacman -Syu
+sudo pacman -S gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip python-pygments
 ```
 
 ## Powerline fonts

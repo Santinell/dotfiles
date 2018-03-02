@@ -15,6 +15,7 @@ alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dirsize='du -scxkh .* *'
 alias back='cd $OLDPWD'
 alias ls='ls --color'
+alias ccat='pygmentize -g -O style=colorful'
 
 setopt PROMPT_CR
 setopt PROMPT_SP
