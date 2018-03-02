@@ -14,7 +14,8 @@ sudo pip install Pygments
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pygmentize
+sudo pacman -S gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pacaur
+sudo pacaur -S ccat
 ```
 
 ## Powerline fonts
