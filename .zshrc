@@ -20,6 +20,8 @@ zplug "lib/completion", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
 zplug "zdharma/fast-syntax-highlighting"
+zplug "~/dotfiles/arch", from:local, if:"(( $+commands[pacman] ))"
+zplug "~/dotfiles/temp", from:local, if:"(( $+commands[sensors] )) && (( $+commands[hddtemp] ))"
 
 # Load theme file
 #zplug 'themes/agnoster', from:oh-my-zsh, as:theme

@@ -8,7 +8,7 @@ h() {
 }
 
 alias grep='grep --color=auto'
-alias psg='ps aux | grep'
+alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'
 alias sendtext='curl -F "sprunge=<-" http://sprunge.us'
 alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
