@@ -10,7 +10,7 @@ h() {
 alias grep='grep --color=auto'
 alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'
-alias sendtext='curl -F "sprunge=<-" http://sprunge.us'
+alias sendtext='curl -F "f:1=<-" ix.io'
 alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dirsize='du -scxkh .* *'
 alias back='cd $OLDPWD'
