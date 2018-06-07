@@ -31,10 +31,10 @@ git clone https://github.com/Santinell/dotfiles ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ```
 
-## Etra soft list
+## Extra soft list
 
 ```shell
 sudo pacman -S --needed --noconfirm nodejs-lts-carbon guake openssh chromium xdotool variety
 gpg --recv-keys 8F0871F202119294 // For discord
-pacaur -S --needed --noconfirm discord atom-editor-bin flameshot-git ccat
+pacaur -S --needed --noconfirm discord atom-editor-bin flameshot-git ccat devdocs-desktop
 ```
