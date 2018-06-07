@@ -11,13 +11,9 @@ alias grep='grep --color=auto'
 alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'
 alias sendtext='curl -F "f:1=<-" ix.io'
-alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dirsize='du -scxkh .* *'
 alias back='cd $OLDPWD'
 alias ls='ls --color'
-if ! type "ccat" > /dev/null; then
-  alias ccat='pygmentize -g -O style=colorful'
-fi
 
 setopt PROMPT_CR
 setopt PROMPT_SP

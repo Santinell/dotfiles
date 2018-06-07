@@ -9,6 +9,8 @@ pacman() {
     /usr/bin/pacman -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
     sudo /usr/bin/pacman -Rs ${@:2}
+  elif [ $1 = "autoremove" ] ; then
+    sudo /usr/bin/pacman -Rcns $(pacman -Qdtq)
   else
     sudo /usr/bin/pacman $@
   fi
@@ -25,6 +27,8 @@ pacaur() {
     /usr/bin/pacaur -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
     /usr/bin/pacaur -Rs ${@:2}
+  elif [ $1 = "autoremove" ] ; then
+    /usr/bin/pacaur -Rcns $(/usr/bin/pacaur -Qdtq)
   else
     /usr/bin/pacaur $@
   fi
