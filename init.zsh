@@ -25,7 +25,7 @@ zstyle ":completion:*" menu select
 zstyle ":completion::complete:*" use-cache 1
 
 bindkey -s '^[r' '^U'
-bindkey -s '^[a' '^Usudo !!^M'
+bindkey -s '^[a' '^Ugit add '
 bindkey -s '^[c' '^Ugit commit -m ""'
 bindkey -s '^[p' '^Ugit push'
 bindkey -s '^[s' '^Ugit status^M'
