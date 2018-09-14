@@ -13,15 +13,15 @@ sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gz
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pacaur
+sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pacaur nerd-fonts-hack
 ```
 
-## Powerline fonts
+## Fonts for non-arch
 
 ```shell
-git clone https://github.com/powerline/fonts.git ~/powerline_fonts
-~/powerline_fonts/install.sh
-rm -rf ~/powerline_fonts
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts ~/nerd-fonts
+~/nerd-fonts/install.sh Hack
+rm -rf ~/nerd-fonts
 ```
 
 ## Dotfiles
