@@ -22,7 +22,9 @@ if ! zgen saved; then
     zgen oh-my-zsh lib/key-bindings.zsh
     zgen oh-my-zsh lib/history.zsh
     zgen load zdharma/fast-syntax-highlighting
-    zgen load ~/dotfiles/arch
+    if [ -x "$(command -v pacman)" ]; then
+      zgen load ~/dotfiles/arch
+    fi
 
     # Load theme file
     zgen load bhilburn/powerlevel9k powerlevel9k
