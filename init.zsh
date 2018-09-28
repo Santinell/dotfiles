@@ -26,6 +26,7 @@ zstyle ":completion::complete:*" use-cache 1
 
 bindkey -s '^[r' '^U'
 bindkey -s '^[a' '^Ugit add '
+bindkey -s '^[r' '^Ugit rebase '
 bindkey -s '^[c' '^Ugit commit -m ""'
 bindkey -s '^[p' '^Ugit push'
 bindkey -s '^[s' '^Ugit status^M'
@@ -95,4 +96,8 @@ sendfile() {
   cat $tmpfile;
   rm -f $tmpfile;
   echo "";
+}
+
+weather() {
+  curl wttr.in/$1
 }
