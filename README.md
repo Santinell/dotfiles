@@ -13,7 +13,7 @@ sudo apt install gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip-full gz
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip pacaur nerd-fonts-hack
+sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip fzf pacaur nerd-fonts-hack
 ```
 
 ## Fonts for non-arch
@@ -34,7 +34,7 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 ## Extra soft list
 
 ```shell
-sudo pacman -S --needed --noconfirm nodejs-lts-carbon guake openssh chromium xdotool variety
+sudo pacman -S --needed --noconfirm nodejs-lts-carbon guake openssh chromium
 gpg --recv-keys 8F0871F202119294 // For discord
-pacaur -S --needed --noconfirm discord atom-editor-bin flameshot-git ccat devdocs-desktop
+pacaur -S --needed --noconfirm discord atom-editor-bin flameshot-git ccat fkill
 ```
