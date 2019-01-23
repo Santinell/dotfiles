@@ -42,6 +42,10 @@ bindkey '^[[1;3D' backward-word
 
 git config --global push.default current
 
+writeiso () {
+  dd bs=8M if=$1 of=$2 status=progress oflag=sync
+}
+
 compress () {
   if [ $1 ] ; then
     case $1 in
