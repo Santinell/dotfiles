@@ -1,8 +1,6 @@
-# Install
-
 ## Dependencies
 
-### Debian/Ubuntu
+### For Debian/Ubuntu:
 
 ```shell
 sudo add-apt-repository ppa:aacebedo/fasd
@@ -15,7 +13,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-### Arch linux
+### For Arch linux:
 
 ```shell
 sudo pacman -Syu
