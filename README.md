@@ -17,7 +17,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip fzf pacaur nerd-fonts-hack fasd
+sudo pacman -S --needed --noconfirm gawk git zsh nano mc curl wget tar bzip2 gzip zip p7zip gzip fzf pacaur fasd
+pacaur -S --needed --noconfirm nerd-fonts-hack
 ```
 
 ## Dotfiles
