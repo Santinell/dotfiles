@@ -7,6 +7,11 @@ h() {
   fi
 }
 
+if [ -x "$(command -v micro)" ]; then
+  alias mi='micro'
+  alias mini='micro'
+fi
+
 alias grep='grep --color=auto'
 alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'

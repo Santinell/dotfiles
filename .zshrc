@@ -5,6 +5,7 @@ export TERM="xterm-256color"
 export POWERLEVEL9K_MODE='nerdfont-complete'
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+export PATH=$PATH:~/.local/bin
 
 # Check if zplug is installed
 if [[ ! -d ~/.zgen ]]; then
