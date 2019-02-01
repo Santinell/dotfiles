@@ -1,8 +1,7 @@
+export LC_COLLATE="C"
 export PROMPT_EOL_MARK=""
-export EDITOR=/bin/nano
-export VISUAL=/bin/nano
 export TERM="xterm-256color"
-export POWERLEVEL9K_MODE='nerdfont-complete'
+export POWERLEVEL9K_MODE="nerdfont-complete"
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 export PATH=$PATH:~/.local/bin

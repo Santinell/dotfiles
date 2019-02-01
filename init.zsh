@@ -1,15 +1,17 @@
-h() {
-  if [ $# -eq 0 ]; then
-    fc -l
-    return;
-  else
-    fc -l -$1
-  fi
-}
+setopt PROMPT_CR
+setopt PROMPT_SP
+setopt extendedglob
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt menucomplete
 
-if [ -x "$(command -v micro)" ]; then
+MIPATH=$(command -v micro)
+if [ -x $MIPATH ]; then
   alias mi='micro'
   alias mini='micro'
+  export EDITOR=$MIPATH
+  export VISUAL=$MIPATH
 fi
 
 alias grep='grep --color=auto'
@@ -18,18 +20,11 @@ alias hisg='h 10000 | grep'
 alias sendtext='curl -F "f:1=<-" ix.io'
 alias dirsize='du -scxkh .* *'
 alias back='cd $OLDPWD'
-alias ls='ls --color'
+alias ls='ls --color -h --group-directories-first'
 
-setopt PROMPT_CR
-setopt PROMPT_SP
-setopt extendedglob
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
-setopt menucomplete
-zstyle ":completion:*" menu select
-zstyle ":completion::complete:*" use-cache 1
-
-bindkey -s '^[r' '^U'
+bindkey -r '^P'
+bindkey -r '^N'
+bindkey -s '^[x' '^U'
 bindkey -s '^[a' '^Ugit add '
 bindkey -s '^[r' '^Ugit rebase '
 bindkey -s '^[c' '^Ugit commit -m ""'
@@ -38,14 +33,17 @@ bindkey -s '^[s' '^Ugit status^M'
 bindkey -s '^[d' '^Ugit diff '
 bindkey -s '^[l' '^Ugit log^M'
 bindkey -s '^[b' '^Ugit checkout '
-bindkey -r '^[[1;5C'
-bindkey -r '^[[1;5D'
-bindkey -r '^P'
-bindkey -r '^N'
-bindkey '^[[1;3C' forward-word
-bindkey '^[[1;3D' backward-word
 
 git config --global push.default current
+
+h() {
+  if [ $# -eq 0 ]; then
+    fc -l
+    return;
+  else
+    fc -l -$1
+  fi
+}
 
 writeiso () {
   dd bs=8M if=$1 of=$2 status=progress oflag=sync
