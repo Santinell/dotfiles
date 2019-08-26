@@ -1,6 +1,6 @@
 ## Dependencies
 
-### For Debian/Ubuntu:
+## Dependencies for Debian/Ubuntu:
 
 ```shell
 sudo add-apt-repository ppa:aacebedo/fasd
@@ -13,7 +13,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-### For Arch linux:
+## Dependencies for Arch linux:
 
 ```shell
 sudo pacman -Syu
@@ -21,7 +21,7 @@ sudo pacman -S --needed --noconfirm gawk git zsh mc curl wget tar bzip2 gzip zip
 pacaur -S --needed --noconfirm nerd-fonts-hack
 ```
 
-## Dotfiles
+## Installing dotfiles
 
 ```shell
 git clone https://github.com/Santinell/dotfiles ~/dotfiles

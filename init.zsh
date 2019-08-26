@@ -34,7 +34,7 @@ bindkey -s '^[d' '^Ugit diff '
 bindkey -s '^[l' '^Ugit log^M'
 bindkey -s '^[b' '^Ugit checkout '
 
-git config --global push.default current
+git config --global push.default current 2>/dev/null
 
 h() {
   if [ $# -eq 0 ]; then
@@ -103,8 +103,4 @@ sendfile() {
   cat $tmpfile;
   rm -f $tmpfile;
   echo "";
-}
-
-weather() {
-  curl wttr.in/$1
 }
