@@ -4,7 +4,7 @@ pacman() {
   elif [ $1 = "update" ] ; then
     sudo /usr/bin/pacman -Sy
   elif [ $1 = "upgrade" ] ; then
-    sudo /usr/bin/pacman -Suyy
+    sudo /usr/bin/pacman -Syyuu
   elif [ $1 = "search" ] ; then
     /usr/bin/pacman -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
@@ -22,7 +22,7 @@ pacaur() {
   elif [ $1 = "update" ] ; then
     /usr/bin/pacaur -Sy
   elif [ $1 = "upgrade" ] ; then
-    /usr/bin/pacaur -Suyy
+    /usr/bin/pacaur -Syyuu
   elif [ $1 = "search" ] ; then
     /usr/bin/pacaur -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
