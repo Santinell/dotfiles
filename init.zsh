@@ -21,6 +21,8 @@ alias sendtext='curl -F "f:1=<-" ix.io'
 alias dirsize='du -scxkh .* *'
 alias back='cd $OLDPWD'
 alias ls='ls --color -h --group-directories-first'
+alias npg="npm list -g --depth=0 2>/dev/null"
+alias npl="npm list --depth=0 2>/dev/null"
 
 bindkey -r '^P'
 bindkey -r '^N'
@@ -46,7 +48,11 @@ h() {
 }
 
 writeiso () {
-  dd bs=8M if=$1 of=$2 status=progress oflag=sync
+  if [ $1 ] ; then
+    sudo dd bs=8M if=$1 of=$2 status=progress oflag=sync
+  else
+    echo "Example: writeiso /path/to/file /dev/devName"
+  fi
 }
 
 compress () {
