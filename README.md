@@ -26,4 +26,5 @@ pacaur -S --needed --noconfirm nerd-fonts-hack
 ```shell
 git clone https://github.com/Santinell/dotfiles ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.profile ~/.profile
 ```
