@@ -23,6 +23,9 @@ alias back='cd $OLDPWD'
 alias ls='ls --color -h --group-directories-first'
 alias npg="npm list -g --depth=0 2>/dev/null"
 alias npl="npm list --depth=0 2>/dev/null"
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias rm='rm -i'
 
 bindkey -r '^P'
 bindkey -r '^N'
