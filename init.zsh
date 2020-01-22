@@ -18,7 +18,7 @@ alias grep='grep --color=auto'
 alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'
 alias sendtext='curl -F "f:1=<-" ix.io'
-alias dirsize='du -scxkh .* *'
+alias dirsize='sudo du -xhd1 2>/dev/null | sort -hr | head -25'
 alias back='cd $OLDPWD'
 alias ls='ls --color -h --group-directories-first'
 alias npg="npm list -g --depth=0 2>/dev/null"
