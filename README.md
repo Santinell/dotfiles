@@ -3,28 +3,24 @@
 ## Dependencies for Debian/Ubuntu:
 
 ```shell
-sudo add-apt-repository ppa:aacebedo/fasd
-sudo apt update
-sudo apt install gawk git zsh mc curl wget tar bzip2 gzip zip p7zip-full gzip fasd
+sudo apt update -y
+sudo apt install -y gawk git zsh curl wget tar bzip2 gzip zip p7zip-full gzip fasd fzf
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts ~/nerd-fonts
 ~/nerd-fonts/install.sh Hack
 rm -rf ~/nerd-fonts
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 ```
 
 ## Dependencies for Arch linux:
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S --needed --noconfirm gawk git zsh mc curl wget tar bzip2 gzip zip p7zip gzip fzf pacaur fasd noto-fonts-emoji
-pacaur -S --needed --noconfirm nerd-fonts-hack
+sudo pacman -S --needed --noconfirm gawk git zsh curl wget tar bzip2 gzip zip p7zip gzip fzf fasd nerd-fonts-noto-sans-mono
 ```
 
 ## Installing dotfiles
 
 ```shell
-git clone https://github.com/Santinell/dotfiles ~/dotfiles
+git clone git@github.com:Santinell/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.profile ~/.profile
 ```
