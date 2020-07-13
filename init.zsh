@@ -40,6 +40,7 @@ bindkey -s '^[l' '^Ugit log^M'
 bindkey -s '^[b' '^Ugit checkout '
 
 git config --global push.default current 2>/dev/null
+git config --global pull.rebase false
 
 h() {
   if [ $# -eq 0 ]; then
