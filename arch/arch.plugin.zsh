@@ -36,7 +36,7 @@ yay() {
 
 pacaur() {
   if [ $1 = "install" ] ; then
-    /usr/bin/pacaur -S ${@:2}
+    /usr/bin/pacaur -S --noedit ${@:2}
   elif [ $1 = "update" ] ; then
     /usr/bin/pacaur -Sy
   elif [ $1 = "upgrade" ] ; then
