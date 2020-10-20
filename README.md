@@ -6,7 +6,7 @@
 sudo apt update -y
 sudo apt install -y gawk git zsh curl wget tar bzip2 gzip zip p7zip-full gzip fasd fzf
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts ~/nerd-fonts
-~/nerd-fonts/install.sh Hack
+~/nerd-fonts/install.sh "Meslo LG"
 rm -rf ~/nerd-fonts
 ```
 
@@ -14,7 +14,8 @@ rm -rf ~/nerd-fonts
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S --needed --noconfirm gawk git zsh curl wget tar bzip2 gzip zip p7zip gzip fzf fasd nerd-fonts-noto-sans-mono
+sudo pacman -S --needed --noconfirm gawk git zsh curl wget tar bzip2 gzip zip p7zip gzip fzf fasd pacaur
+pacaur -S --needed --noconfirm ttf-meslo-nerd-font-powerlevel10k
 ```
 
 ## Installing dotfiles

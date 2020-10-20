@@ -6,14 +6,6 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt menucomplete
 
-MIPATH=$(command -v micro)
-if [ -x $MIPATH ]; then
-  alias mi='micro'
-  alias mini='micro'
-  export EDITOR=$MIPATH
-  export VISUAL=$MIPATH
-fi
-
 alias grep='grep --color=auto'
 alias psg='ps aux | grep -v grep | grep'
 alias hisg='h 10000 | grep'
