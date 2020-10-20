@@ -22,5 +22,5 @@ sudo pacman -S --needed --noconfirm gawk git zsh curl wget tar bzip2 gzip zip p7
 ```shell
 git clone git@github.com:Santinell/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.profile ~/.profile
+cp ~/dotfiles/.profile ~/.profile
 ```
