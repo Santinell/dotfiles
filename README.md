@@ -23,5 +23,5 @@ pacaur -S --needed --noconfirm ttf-meslo-nerd-font-powerlevel10k
 ```shell
 git clone git@github.com:Santinell/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-cp ~/dotfiles/.profile ~/.profile
+cp ~/dotfiles/.zprofile ~/.zprofile
 ```
