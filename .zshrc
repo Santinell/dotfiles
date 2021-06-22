@@ -16,7 +16,6 @@ source ~/.zgen/zgen.zsh
 if ! zgen saved; then
     echo "Creating a zgen save"
     zgen oh-my-zsh
-    zgen oh-my-zsh plugins/emoji
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/fzf

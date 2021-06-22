@@ -12,7 +12,11 @@ alias hisg='h 10000 | grep'
 alias sendtext='curl -F "f:1=<-" ix.io'
 alias dirsize='sudo du -xhd1 2>/dev/null | sort -hr | head -25'
 alias back='cd $OLDPWD'
-alias ls='ls --color -h --group-directories-first'
+if [ -x "$(command -v lsd)" ]; then
+  alias ls='lsd -lah --group-dirs=first'
+else
+  alias ls='ls --color -lah --group-directories-first'
+fi
 alias npg="npm list -g --depth=0 2>/dev/null"
 alias npl="npm list --depth=0 2>/dev/null"
 alias chown='chown --preserve-root'
@@ -21,14 +25,23 @@ alias rm='rm -i'
 
 bindkey -r '^P'
 bindkey -r '^N'
+# Alt+X = Clear line
 bindkey -s '^[x' '^U'
+# Alt+A = Git Add
 bindkey -s '^[a' '^Ugit add '
+# Alt+R = Git reset
 bindkey -s '^[r' '^Ugit reset '
+# Alt+C = Git commit
 bindkey -s '^[c' '^Ugit commit -m ""'
+# Alt+P = Git push
 bindkey -s '^[p' '^Ugit push '
+# Alt+S = Git status
 bindkey -s '^[s' '^Ugit status^M'
+# Alt+D = Git diff
 bindkey -s '^[d' '^Ugit diff '
+# Alt+L = Git log
 bindkey -s '^[l' '^Ugit log^M'
+# Alt+B = Git Checkout
 bindkey -s '^[b' '^Ugit checkout '
 
 git config --global push.default current 2>/dev/null
@@ -41,6 +54,40 @@ h() {
   else
     fc -l -$1
   fi
+}
+
+countlines () {
+  glob=' -name "*.*"'
+  ignore=''
+  globs=()
+  ignors=("*/node_modules/*" "*/.git/*")
+
+  while getopts "hfi:" opt; do
+    case "$opt" in
+    h)  echo "Example: countlines [-f *.js] [-i build]"
+        exit 0
+        ;;
+    f)  globs+=($OPTARG)
+        ;;
+    i)  ignors+=($OPTARG)
+        ;;
+    esac
+  done
+
+  for i in "${ignors[@]}"
+  do
+    ignore+=" -not -path \"${i}\""
+  done
+
+  if [ ${#globs[@]} -gt 0 ]; then
+    glob=""
+    for g in "${globs[@]}"
+    do
+      glob+=" -name \"${g}\""
+    done
+  fi
+
+  eval "find .$ignore -type f$glob -print | xargs wc -l"
 }
 
 writeiso () {
