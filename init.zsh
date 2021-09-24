@@ -20,6 +20,7 @@ fi
 alias npg="npm list -g --depth=0 2>/dev/null"
 alias npl="npm list --depth=0 2>/dev/null"
 alias eslint="npx eslint"
+alias tap="npx tap"
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias rm='rm -i'

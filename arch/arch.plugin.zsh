@@ -16,21 +16,21 @@ pacman() {
   fi
 }
 
-yay() {
+trizen() {
   if [ $1 = "install" ] ; then
-    /usr/bin/yay -S ${@:2}
+    /usr/bin/trizen -S --needed --noedit ${@:2}
   elif [ $1 = "update" ] ; then
-    /usr/bin/yay -Sy
+    /usr/bin/trizen -Sy
   elif [ $1 = "upgrade" ] ; then
-    /usr/bin/yay -Syyuu
+    /usr/bin/trizen -Syyuu
   elif [ $1 = "search" ] ; then
-    /usr/bin/yay -Ss ${@:2}
+    /usr/bin/trizen -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
-    /usr/bin/yay -Rns ${@:2}
+    /usr/bin/trizen -Rns ${@:2}
   elif [ $1 = "autoremove" ] ; then
-    /usr/bin/yay -Qtd
+    /usr/bin/trizen -Rcns $(trizen -Qdtq)
   else
-    /usr/bin/yay $@
+    /usr/bin/trizen $@
   fi
 }
 
