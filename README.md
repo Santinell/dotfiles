@@ -27,5 +27,5 @@ sudo pacman -S --needed --noconfirm lsd the_silver_searcher
 ```shell
 git clone git@github.com:Santinell/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-cp ~/dotfiles/.zprofile ~/.zprofile
+cp ~/dotfiles/.zshenv ~/.zshenv
 ```

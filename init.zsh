@@ -23,7 +23,6 @@ alias eslint="npx eslint"
 alias tap="npx tap"
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
-alias rm='rm -i'
 
 bindkey -r '^P'
 bindkey -r '^N'
