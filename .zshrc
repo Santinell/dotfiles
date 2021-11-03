@@ -20,7 +20,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/fzf
     zgen oh-my-zsh plugins/fasd
-    zgen load zdharma/fast-syntax-highlighting
+    zgen load zdharma-continuum/fast-syntax-highlighting
     if [ -x "$(command -v pacman)" ]; then
       zgen load ~/dotfiles/arch
     fi
