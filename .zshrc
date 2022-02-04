@@ -2,8 +2,6 @@ export LC_COLLATE="C"
 export PROMPT_EOL_MARK=""
 export TERM="xterm-256color"
 export PATH=$PATH:~/.local/bin
-export EDITOR=/usr/bin/nano
-export VISUAL=/usr/bin/nano
 
 # Check if zplug is installed
 if [[ ! -d ~/.zgen ]]; then

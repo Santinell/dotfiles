@@ -21,6 +21,7 @@ alias npg="npm list -g --depth=0 2>/dev/null"
 alias npl="npm list --depth=0 2>/dev/null"
 alias eslint="npx eslint"
 alias tap="npx tap"
+alias nodemon="npx nodemon"
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 
@@ -55,6 +56,10 @@ h() {
   else
     fc -l -$1
   fi
+}
+
+help () {
+  curl cht.sh/$1/$2
 }
 
 countlines () {
