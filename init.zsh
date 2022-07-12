@@ -31,8 +31,10 @@ bindkey -r '^N'
 bindkey -s '^[x' '^U'
 # Alt+A = Git Add
 bindkey -s '^[a' '^Ugit add '
-# Alt+R = Git reset
-bindkey -s '^[r' '^Ugit reset '
+# Alt+R = Git rebase
+bindkey -s '^[r' '^Ugit rebase '
+# Alt+T = Git reset
+bindkey -s '^[t' '^Ugit reset '
 # Alt+C = Git commit
 bindkey -s '^[c' '^Ugit commit -m ""'
 # Alt+P = Git push
@@ -41,6 +43,8 @@ bindkey -s '^[p' '^Ugit push '
 bindkey -s '^[s' '^Ugit status^M'
 # Alt+D = Git diff
 bindkey -s '^[d' '^Ugit diff '
+# Alt+M = Git merge
+bindkey -s '^[m' '^Ugit merge '
 # Alt+L = Git log
 bindkey -s '^[l' '^Ugit log^M'
 # Alt+B = Git Checkout
