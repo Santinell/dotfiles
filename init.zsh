@@ -37,6 +37,8 @@ bindkey -s '^[r' '^Ugit rebase '
 bindkey -s '^[t' '^Ugit reset '
 # Alt+C = Git commit
 bindkey -s '^[c' '^Ugit commit -m ""'
+# Alt+G = Git pull
+bindkey -s '^[g' '^Ugit pull '
 # Alt+P = Git push
 bindkey -s '^[p' '^Ugit push '
 # Alt+S = Git status

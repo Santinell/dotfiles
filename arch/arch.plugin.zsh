@@ -18,11 +18,11 @@ pacman() {
 
 trizen() {
   if [ $1 = "install" ] ; then
-    /usr/bin/trizen -S --needed --noedit ${@:2}
+    /usr/bin/trizen -S --needed --noinfo --noedit ${@:2}
   elif [ $1 = "update" ] ; then
-    /usr/bin/trizen -Sy
+    /usr/bin/trizen -Sy --noedit --noinfo
   elif [ $1 = "upgrade" ] ; then
-    /usr/bin/trizen -Syyuu
+    /usr/bin/trizen -Syyuu --noedit --noinfo
   elif [ $1 = "search" ] ; then
     /usr/bin/trizen -Ss ${@:2}
   elif [ $1 = "remove" -o $1 = "purge" ] ; then
