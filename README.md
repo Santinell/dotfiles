@@ -28,4 +28,5 @@ sudo pacman -S --needed --noconfirm lsd the_silver_searcher
 git clone git@github.com:Santinell/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 cp ~/dotfiles/.zshenv ~/.zshenv
+cp ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 ```
