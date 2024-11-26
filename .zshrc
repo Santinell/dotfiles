@@ -44,10 +44,4 @@ source ~/dotfiles/init.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
-unset POWERLEVEL9K_VCS_CONTENT_EXPANSION
-unset POWERLEVEL9K_VCS_DISABLE_GITSTATUS_FORMATTING
-unset POWERLEVEL9K_ICON_PADDING
-unset POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION
 (( ! ${+functions[p10k]} )) || p10k finalize

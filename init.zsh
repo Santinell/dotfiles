@@ -12,6 +12,7 @@ alias hisg='h 10000 | grep'
 alias sendtext='curl -F "f:1=<-" ix.io'
 alias dirsize='sudo du -xhd1 2>/dev/null | sort -hr | head -25'
 alias back='cd $OLDPWD'
+alias mc='SHELL=/bin/bash mc'
 if [ -x "$(command -v lsd)" ]; then
   alias ls='lsd -lah --group-dirs=first'
 else
